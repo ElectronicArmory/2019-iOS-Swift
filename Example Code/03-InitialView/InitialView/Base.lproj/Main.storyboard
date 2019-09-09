@@ -24,24 +24,24 @@
                                 <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="086-Gi-5nV">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="086-Gi-5nV">
                                 <rect key="frame" x="20" y="329" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sql-N0-u8W">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sql-N0-u8W">
                                 <rect key="frame" x="20" y="415" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-GA-7Nr">
-                                <rect key="frame" x="213" y="492" width="166" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-GA-7Nr">
+                                <rect key="frame" x="236" y="492" width="143" height="65"/>
                                 <color key="backgroundColor" red="0.021517056971788406" green="0.19882944226264954" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="lm1-PU-XvP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="34"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,9 +50,11 @@
                                     <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTI-ib-Z1O"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Boise Food Finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-zp-IDf">
-                                <rect key="frame" x="20" y="106" width="374" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boise Food Finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-zp-IDf">
+                                <rect key="frame" x="20" y="106" width="374" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="nAl-SJ-RF9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="22"/>
                                 <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -63,6 +65,17 @@
                             <constraint firstItem="mGm-bK-JwM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="213" id="4VZ-aq-M5g"/>
                             <constraint firstItem="mGm-bK-JwM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5GJ-DV-oWB"/>
                             <constraint firstItem="mGm-bK-JwM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5p1-4z-tGF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sql-N0-u8W" secondAttribute="trailing" constant="20" id="CO5-KE-lrt"/>
+                            <constraint firstItem="sql-N0-u8W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="I8K-hl-oy6"/>
+                            <constraint firstItem="086-Gi-5nV" firstAttribute="top" secondItem="mGm-bK-JwM" secondAttribute="bottom" constant="11" id="RJV-93-L7v"/>
+                            <constraint firstItem="sql-N0-u8W" firstAttribute="top" secondItem="086-Gi-5nV" secondAttribute="bottom" constant="56" id="X1o-yO-cgW"/>
+                            <constraint firstItem="086-Gi-5nV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cMM-3I-vOw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2gO-zp-IDf" secondAttribute="trailing" constant="20" id="dFc-Nv-0GS"/>
+                            <constraint firstItem="2gO-zp-IDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dMs-gg-f5M"/>
+                            <constraint firstItem="vmh-GA-7Nr" firstAttribute="top" secondItem="sql-N0-u8W" secondAttribute="bottom" constant="47" id="hK5-Be-Oge"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="086-Gi-5nV" secondAttribute="trailing" constant="20" id="oHm-KU-6sh"/>
+                            <constraint firstItem="2gO-zp-IDf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="oon-ct-F04"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vmh-GA-7Nr" secondAttribute="trailing" constant="35" id="u6j-cH-Pc1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
