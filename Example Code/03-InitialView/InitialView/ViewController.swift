@@ -16,7 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
-    @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var output2Label: UILabel!
+    
+    var programmaticLabel:UILabel = UILabel()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +32,7 @@ class ViewController: UIViewController {
         let username = usernameTextfield.text
         let password = passwordTextfield.text
         
-        outputLabel.text = "Logging in: \(username!) with password: \(password)"
+//        outputLabel.text = "Logging in: \(username!) with password: \(password)"
         
     }
 }

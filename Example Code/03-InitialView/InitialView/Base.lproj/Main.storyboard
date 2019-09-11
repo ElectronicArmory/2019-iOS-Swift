@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,33 +15,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InitialView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boise Food Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGm-bK-JwM">
-                                <rect key="frame" x="20" y="257" width="374" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boise Food Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="mGm-bK-JwM">
+                                <rect key="frame" x="20" y="209" width="335" height="61"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="46"/>
                                 <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="086-Gi-5nV">
-                                <rect key="frame" x="20" y="329" width="374" height="30"/>
+                                <rect key="frame" x="20" y="278" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sql-N0-u8W">
-                                <rect key="frame" x="20" y="415" width="374" height="30"/>
+                                <rect key="frame" x="20" y="339" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-GA-7Nr">
-                                <rect key="frame" x="236" y="492" width="143" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-GA-7Nr">
+                                <rect key="frame" x="846" y="468" width="143" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.021517056971788406" green="0.19882944226264954" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="143" id="lm1-PU-XvP"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="34"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,9 +49,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boise Food Finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-zp-IDf">
-                                <rect key="frame" x="20" y="106" width="374" height="131"/>
+                                <rect key="frame" x="92" y="70" width="191" height="131"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="131" id="nAl-SJ-RF9"/>
+                                    <constraint firstAttribute="height" constant="131" id="jA4-2r-Ayc"/>
+                                    <constraint firstAttribute="width" constant="191" id="qQr-5f-CtW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="22"/>
                                 <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,26 +61,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mGm-bK-JwM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="213" id="4VZ-aq-M5g"/>
-                            <constraint firstItem="mGm-bK-JwM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5GJ-DV-oWB"/>
-                            <constraint firstItem="mGm-bK-JwM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5p1-4z-tGF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sql-N0-u8W" secondAttribute="trailing" constant="20" id="CO5-KE-lrt"/>
-                            <constraint firstItem="sql-N0-u8W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="I8K-hl-oy6"/>
-                            <constraint firstItem="086-Gi-5nV" firstAttribute="top" secondItem="mGm-bK-JwM" secondAttribute="bottom" constant="11" id="RJV-93-L7v"/>
-                            <constraint firstItem="sql-N0-u8W" firstAttribute="top" secondItem="086-Gi-5nV" secondAttribute="bottom" constant="56" id="X1o-yO-cgW"/>
-                            <constraint firstItem="086-Gi-5nV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cMM-3I-vOw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2gO-zp-IDf" secondAttribute="trailing" constant="20" id="dFc-Nv-0GS"/>
-                            <constraint firstItem="2gO-zp-IDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dMs-gg-f5M"/>
-                            <constraint firstItem="vmh-GA-7Nr" firstAttribute="top" secondItem="sql-N0-u8W" secondAttribute="bottom" constant="47" id="hK5-Be-Oge"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="086-Gi-5nV" secondAttribute="trailing" constant="20" id="oHm-KU-6sh"/>
-                            <constraint firstItem="2gO-zp-IDf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="oon-ct-F04"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vmh-GA-7Nr" secondAttribute="trailing" constant="35" id="u6j-cH-Pc1"/>
+                            <constraint firstItem="086-Gi-5nV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AcA-L0-VE8"/>
+                            <constraint firstItem="2gO-zp-IDf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ECj-FV-4KK"/>
+                            <constraint firstItem="mGm-bK-JwM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Lvv-5N-lW9"/>
+                            <constraint firstItem="2gO-zp-IDf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MLt-4G-Cuv"/>
+                            <constraint firstItem="sql-N0-u8W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X5v-ks-JH5"/>
+                            <constraint firstItem="086-Gi-5nV" firstAttribute="top" secondItem="mGm-bK-JwM" secondAttribute="bottom" constant="8" id="Z8D-r4-AD8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sql-N0-u8W" secondAttribute="trailing" constant="20" id="ZtV-b2-7zo"/>
+                            <constraint firstItem="sql-N0-u8W" firstAttribute="top" secondItem="086-Gi-5nV" secondAttribute="bottom" constant="31" id="kiw-lz-TYz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="086-Gi-5nV" secondAttribute="trailing" constant="20" id="qfB-C3-9I6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mGm-bK-JwM" secondAttribute="trailing" constant="20" id="wcw-HJ-ELP"/>
+                            <constraint firstItem="mGm-bK-JwM" firstAttribute="top" secondItem="2gO-zp-IDf" secondAttribute="bottom" constant="8" id="xJe-mR-h5Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="helloLabel" destination="mGm-bK-JwM" id="JW4-VE-a5Y"/>
-                        <outlet property="outputLabel" destination="2gO-zp-IDf" id="kCm-MB-xa8"/>
+                        <outlet property="output2Label" destination="2gO-zp-IDf" id="EZe-gg-7PU"/>
                         <outlet property="passwordTextfield" destination="sql-N0-u8W" id="DMh-oT-l97"/>
                         <outlet property="usernameTextfield" destination="086-Gi-5nV" id="KyS-gX-jVK"/>
                     </connections>
