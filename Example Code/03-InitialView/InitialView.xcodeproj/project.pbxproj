@@ -12,6 +12,7 @@
 		B7412A1A231F43E1000FB753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7412A18231F43E1000FB753 /* Main.storyboard */; };
 		B7412A1C231F43E3000FB753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7412A1B231F43E3000FB753 /* Assets.xcassets */; };
 		B7412A1F231F43E3000FB753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7412A1D231F43E3000FB753 /* LaunchScreen.storyboard */; };
+		B76C8D48232B23E70040A5BE /* UserLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76C8D47232B23E70040A5BE /* UserLogController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B7412A1B231F43E3000FB753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7412A1E231F43E3000FB753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7412A20231F43E3000FB753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76C8D47232B23E70040A5BE /* UserLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				B7412A14231F43E1000FB753 /* AppDelegate.swift */,
 				B7412A16231F43E1000FB753 /* ViewController.swift */,
 				B7412A18231F43E1000FB753 /* Main.storyboard */,
+				B76C8D47232B23E70040A5BE /* UserLogController.swift */,
 				B7412A1B231F43E3000FB753 /* Assets.xcassets */,
 				B7412A1D231F43E3000FB753 /* LaunchScreen.storyboard */,
 				B7412A20231F43E3000FB753 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7412A17231F43E1000FB753 /* ViewController.swift in Sources */,
+				B76C8D48232B23E70040A5BE /* UserLogController.swift in Sources */,
 				B7412A15231F43E1000FB753 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

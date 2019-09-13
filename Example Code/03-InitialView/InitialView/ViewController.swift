@@ -29,11 +29,26 @@ class ViewController: UIViewController {
 
 
     @IBAction func loginButtonTapped(_ sender: Any) {
-        let username = usernameTextfield.text
-        let password = passwordTextfield.text
+        let username = usernameTextfield.text // <- returns String? so username is of type `String?`
+        let password = passwordTextfield.text // <- returns String?
         
-//        outputLabel.text = "Logging in: \(username!) with password: \(password)"
+        // Calling .text above on usernameTextfield and passwordTextfield
+        //  returns a String? or a String optional. Meaning, the string could
+        //  come back as nil. Make sure it's not nil and then "unwrap" it to
+        //  get to the value inside, using the ! operator.
+        if( username != nil && password != nil ){
+            let outputString = "Logging in: \(username!) with password: \(password!)"
         
+            var logArray = UserLogController.loggingList()
+            logArray.append(outputString)
+            output2Label.text = logArray[logArray.count-1]
+            
+            // Log twice
+            UserLogController.logNewEvent(newEventToLog: outputString)
+        }
+        else{
+            print("usernameTextfield and/or passwordTextfield have values of nil")
+        }
     }
 }
 
