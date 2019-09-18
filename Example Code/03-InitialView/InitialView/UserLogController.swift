@@ -10,7 +10,7 @@ import Foundation
 
 class UserLogController: NSObject {
 
-    static var loggingArray = Array<String>()
+    static var loggingArray = Array<String>() // Same as: [String]
     
     
     // Class functions allow you to call them without instantiating the class.

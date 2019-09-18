@@ -42,13 +42,22 @@ class ViewController: UIViewController {
             var logArray = UserLogController.loggingList()
             logArray.append(outputString)
             output2Label.text = logArray[logArray.count-1]
-            
+            print(logArray)
+            print(UserLogController.loggingList())
             // Log twice
             UserLogController.logNewEvent(newEventToLog: outputString)
         }
         else{
             print("usernameTextfield and/or passwordTextfield have values of nil")
         }
+    }
+    
+    
+    @IBAction func signupTapped(_ sender: Any) {
+        
+        let signupViewController = storyboard?.instantiateViewController(withIdentifier: "SignUpViewController")
+        
+        self.present(signupViewController!, animated: true, completion: nil)
     }
 }
 
