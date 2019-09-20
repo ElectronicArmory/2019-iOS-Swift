@@ -1,0 +1,20 @@
+PODS:
+  - AnimationSugar (0.0.2)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - AnimationSugar (~> 0.0.2)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AnimationSugar
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  AnimationSugar: 5dcf5c375a90df4b64d5bba27919252cfaf8fe79
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 3524fbb79ab3998892e1bd863250a925c3b164b5
+
+COCOAPODS: 1.5.3
