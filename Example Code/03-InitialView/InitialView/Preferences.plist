@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Copyright</key>
+	<false/>
+	<key>Placeholder</key>
+	<string>Enter your email address</string>
+	<key>Servers</key>
+	<array>
+		<string>http://server1.com</string>
+		<string>http://server2.com</string>
+		<string>http://server3.com</string>
+	</array>
+</dict>
+</plist>

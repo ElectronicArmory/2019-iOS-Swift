@@ -10,10 +10,26 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Loading a PList from disk
+        let preferencesFilePath =  Bundle.main.path(forResource: "Preferences", ofType: "plist")
+        guard FileManager.default.contents(atPath: preferencesFilePath!) != nil else {
+            print("file doesn't exist!")
+            return
+        }
+
+        let plistURL = URL(fileURLWithPath: preferencesFilePath!)
+        let data = try! Data(contentsOf: plistURL)
+        let plist = try! PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil) as! Dictionary<String, AnyObject>
+        
+        let placeholder = plist["Placeholder"]
+        let serversArray = plist["Servers"]
+        
+        print(placeholder!)
+        print(serversArray!)
     }
     
 
