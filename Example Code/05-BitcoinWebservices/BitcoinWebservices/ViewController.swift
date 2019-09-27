@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     static let kRATE = "rate_float"
     
     
+    @IBOutlet weak var bitcoinLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
                     let usdObject:Dictionary = bpiObject[ViewController.kUSD] as! Dictionary<String, Any>
                     let rate = usdObject[ViewController.kRATE] as! Double
                     let rateString = String(format: "$%.2f", rate)
-                    print("\(rateString)")
+                    self.bitcoinLabel.text = "\(rateString)"
                 }
                 
                 NotificationCenter.default.post(name: Notification.Name("BITCOIN_LOAD_SUCCESS"), object: response)
