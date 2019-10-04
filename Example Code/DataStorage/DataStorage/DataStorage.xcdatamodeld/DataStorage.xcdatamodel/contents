@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Car" representedClassName="Car" syncable="YES" codeGenerationType="class">
+        <attribute name="make" optional="YES" attributeType="String"/>
+        <attribute name="model" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="driver" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="car" inverseEntity="Person"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="personAge" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="personDOB" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="personName" attributeType="String" minValueString="1" maxValueString="100"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="driver" inverseEntity="Car"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-45" positionY="0" width="128" height="103"/>
+        <element name="Car" positionX="314.27734375" positionY="-2.625" width="128" height="103"/>
+    </elements>
+</model>
