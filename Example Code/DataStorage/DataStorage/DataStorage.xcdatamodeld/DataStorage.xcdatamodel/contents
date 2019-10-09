@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Car" representedClassName="Car" syncable="YES" codeGenerationType="class">
         <attribute name="make" optional="YES" attributeType="String"/>
         <attribute name="model" optional="YES" attributeType="String"/>
@@ -13,7 +13,7 @@
         <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="driver" inverseEntity="Car"/>
     </entity>
     <elements>
+        <element name="Car" positionX="151.5234375" positionY="-0.01171875" width="128" height="103"/>
         <element name="Person" positionX="-45" positionY="0" width="128" height="103"/>
-        <element name="Car" positionX="314.27734375" positionY="-2.625" width="128" height="103"/>
     </elements>
 </model>
